@@ -48,7 +48,7 @@ document.getElementById("addFlightForm").addEventListener("submit", async functi
       };
 
       try {
-        const response = await fetch("http://localhost:8181/api/v1/flights/add", {
+        const response = await fetch("https://travel-backend-production-5c82.up.railway.app/api/v1/flights", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
