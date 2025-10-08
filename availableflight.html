@@ -282,7 +282,6 @@
         flightList.innerHTML = flights.map(flight => `
           <div class="col-md-4">
             <div class="card flight-card shadow-sm">
-              <img src="assets/images/full${Math.floor(Math.random()*8)+1}.jpg" alt="Flight" />
               <div class="card-body text-center">
                 <h5>${flight.flightNumber}</h5>
                 <p><i class="bi bi-geo-alt-fill"></i> ${flight.departureCity} → ${flight.destinationCity}</p>
