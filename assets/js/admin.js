@@ -48,7 +48,7 @@ document.getElementById("addFlightForm").addEventListener("submit", async functi
       };
 
       try {
-        const response = await fetch("https://travel-backend-production-5c82.up.railway.app/api/v1/flights", {
+        const response = await fetch("https://travel-backend-production-5c82.up.railway.app/api/v1/flights/add", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -79,7 +79,7 @@ document.getElementById("addFlightForm").addEventListener("submit", async functi
 
       async function loadUserCount() {
       try {
-        const response = await fetch("http://localhost:8181/api/v1/auth/count");
+        const response = await fetch("https://travel-backend-production-5c82.up.railway.app/api/v1/auth/count");
         const data= await response.json();
         console.log("Count data:", data);
 
@@ -96,7 +96,7 @@ document.getElementById("addFlightForm").addEventListener("submit", async functi
 
     async function loadFlightCount() {
       try {
-        const response = await fetch("http://localhost:8181/api/v1/flights/count");
+        const response = await fetch("https://travel-backend-production-5c82.up.railway.app/api/v1/flights/count");
         const data = await response.json();
         console.log("Count data:", data);
 
