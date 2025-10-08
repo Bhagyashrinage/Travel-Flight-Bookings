@@ -6,31 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | TravelBook</title>
   <link rel="icon" type="image/png" href="assets/images/logo.jpg">
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    .contact-body {
+    body {
       font-family: 'Poppins', sans-serif;
       background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .contact-container {
       background: rgba(255, 255, 255, 0.9);
       padding: 40px;
-      margin-left: 170px;
       border-radius: 12px;
       max-width: 800px;
       width: 100%;
-      align-content: center;
-      justify-content: center;
+      margin: 50px auto;
       box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
     }
 
@@ -38,12 +31,6 @@
       font-weight: 700;
       margin-bottom: 20px;
       color: #0077b6;
-      margin-top: 20px;
-    }
-
-    .form-control,
-    .btn {
-      border-radius: 8px;
     }
 
     .btn-primary {
@@ -55,134 +42,13 @@
       background-color: #023e8a;
     }
 
-    .contact-info {
-      align-content: center;
-      margin-top: 20px;
-    }
-
-    .contact-info i {
-      line-height: 2em;
-    }
-
-    .contact-info a {
-      color: black;
-      text-decoration: none;
-    }
-
-    .contact-info p {
-      margin: 5px 0;
-      font-size: 15px;
-    }
-
-    /* Gradient Background */
-    .footer-modern {
-      background: linear-gradient(135deg, #0f252e, #294f5c, #306c85);
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* Section Titles */
-    .footer-title {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 15px;
-      border-left: 4px solid #0763c6;
-      padding-left: 10px;
-      text-transform: uppercase;
-      color: #0763c6;
-    }
-
-    /* Links */
-    .footer-modern ul li {
-      margin-bottom: 10px;
-    }
-
-    .footer-modern ul li a {
-      color: #ddd;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .footer-modern ul li a:hover {
-      color: #0091d4;
-      padding-left: 5px;
-    }
-
-    /* Social Icons */
-    .social-link {
-      color: #ddd;
-      font-size: 16px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .social-link i {
-      margin-right: 8px;
-      font-size: 18px;
-    }
-
-    .social-link:hover {
-      padding-left: 5px;
-      color: #0091d4;
-      /* hover effect */
-    }
-
-
-    /* Footer Bottom */
-    .footer-modern p {
+    small.text-danger {
       font-size: 14px;
-      color: #ddd;
-    }
-
-    /* Scroll Button */
-    #scrollTopBtn {
-      background: #0091d4;
-      border: none;
-      transition: 0.3s;
-    }
-
-    #scrollTopBtn i {
-      color: #000;
-    }
-
-    #scrollTopBtn:hover {
-      background: #035d86;
-      color: white;
     }
   </style>
 </head>
 
 <body>
-  <!-- 🔹 Top Contact Bar -->
-  <div class="top-bar d-flex justify-content-between align-items-center px-3 py-2 border-bottom flex-wrap">
-
-  <!-- Contact Info: hidden on mobile -->
-  <div class="d-flex align-items-center flex-wrap small d-none d-md-flex">
-    <span class="me-3">
-      <a href="tel:9820822253" style="color: black; text-decoration: none;">
-        <i class="fa-solid fa-phone me-2"></i> +91 9820822253
-      </a>
-    </span>
-    <span class="me-3">
-      <i class="fa-solid fa-location-dot me-2"></i> Pune
-    </span>
-    <span class="me-3">
-      <a href="mailto:info@travelbook.com" style="color: black; text-decoration: none;">
-        <i class="fa-solid fa-envelope me-2"></i> info@travelbook.com
-      </a>
-    </span>
-  </div>
-
-  <!-- Social Icons: centered on mobile -->
-  <div class="d-flex justify-content-center justify-content-md-center  w-md-auto  mt-md-0">
-    <a href="https://www.facebook.com/login/" class="text-dark me-3"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/accounts/login/#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/login" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.linkedin.com/login" class="text-dark me-3"><i class="fab fa-x-twitter"></i></a>
-    <a href="https://www.youtube.com/" class="text-dark me-3"><i class="fab fa-youtube"></i></a>
-  </div>
-
-</div>
-
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
@@ -193,41 +59,41 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="booking.html">Book Flight</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-         <li class="nav-item"><a class="nav-link" href="login.html" id="loginLogoutLink">Login</a></li>
-
         </ul>
       </div>
     </div>
   </nav>
 
- <section class="contact-body d-flex align-items-center justify-content-center min-vh-100">
-  <div class="container" style="margin: 10px 0px ;">
-    <div class="contact-container mx-auto">
+  <!-- Contact Form Section -->
+  <section class="d-flex align-items-center justify-content-center min-vh-100">
+    <div class="contact-container">
       <div class="row">
         <!-- Contact Form -->
         <div class="col-md-6 mb-4 mb-md-0">
           <h2>Contact Us</h2>
-          <form id="contactForm">
+          <form id="contactForm" novalidate>
             <div class="mb-3">
               <label class="form-label">Your Name</label>
               <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
               <small id="nameError" class="text-danger"></small>
             </div>
+
             <div class="mb-3">
               <label class="form-label">Your Email</label>
               <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
               <small id="emailError" class="text-danger"></small>
             </div>
+
             <div class="mb-3">
               <label class="form-label">Your Message</label>
               <textarea id="message" class="form-control" rows="4" placeholder="Write your message..." required></textarea>
               <small id="messageError" class="text-danger"></small>
             </div>
-            <button type="submit" id="sendMess" class="btn btn-primary w-100">
+
+            <button type="submit" class="btn btn-primary w-100">
               <i class="bi bi-send"></i> Send Message
             </button>
           </form>
@@ -237,170 +103,78 @@
         <div class="col-md-6 d-flex flex-column justify-content-center">
           <h2><i class="bi bi-geo-alt"></i> Get in Touch</h2>
           <div class="contact-info">
-            <p><a href="tel:9876543210"><i class="bi bi-telephone-fill"></i> +91 98765 43210</a></p>
-            <p><a href="mailto:support@travelbook.com"><i class="bi bi-envelope-fill"></i> support@travelbook.com</a></p>
+            <p><a href="tel:9876543210" style="text-decoration: none; color: rgb(0, 0, 0);"><i class="bi bi-telephone-fill"></i> +91 98765 43210</a></p>
+            <p><a href="mailto:support@travelbook.com" style="text-decoration: none; color: rgb(0, 0, 0);"><i class="bi bi-envelope-fill"></i> support@travelbook.com</a></p>
             <p><i class="bi bi-geo-alt-fill"></i> Mumbai, India</p>
             <p><i class="bi bi-clock-fill"></i> Mon - Sat: 9:00 AM - 6:00 PM</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-
-  <!-- Footer Section -->
-  <footer class="footer-modern text-white pt-5">
-    <div class="container">
-      <div class="row">
-
-        <!-- Contact Information -->
-        <div class="col-md-3 mb-4">
-          <h5 class="footer-title">CONTACT INFORMATION</h5>
-          <p><i class="fa-solid fa-phone me-2"></i><a href="tel:9820822253" class="text-white text-decoration-none">+91
-              9820822253</a></p>
-          <p><i class="fa-solid fa-location-dot me-2"></i>Pune, India</p>
-          <p><i class="fa-solid fa-envelope me-2"></i><a href="mailto:info@travelbook.com"
-              class="text-white text-decoration-none">info@TravelBook.com</a></p>
-        </div>
-
-        <!-- Company Links -->
-        <div class="col-md-3 mb-4">
-          <h5 class="footer-title">LINKS</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="booking.html">Book Flight</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Social Media -->
-        <div class="col-md-3 mb-4">
-          <h5 class="footer-title">FOLLOW US</h5>
-          <div class="d-flex flex-column align-items-start gap-3">
-            <a href="https://www.facebook.com/login/" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a>
-            <a href="https://www.instagram.com/accounts/login/#" class="social-link"><i class="fab fa-instagram"></i>
-              Instagram</a>
-            <a href="https://www.linkedin.com/login" class="social-link"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-            <a href="https://www.youtube.com/" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
-          </div>
-        </div>
-
-
-        <!-- Destinations -->
-        <div class="col-md-3 mb-4">
-          <h5 class="footer-title">DESTINATIONS</h5>
-          <ul class="list-unstyled">
-            <li><a href="booking.html">Arunachal Pradesh</a></li>
-            <li><a href="booking.html">Sikkim</a></li>
-            <li><a href="booking.html">Himachal Pradesh</a></li>
-            <li><a href="booking.html">Goa</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Footer Bottom -->
-      <!-- Footer Bottom -->
-      <div class="d-flex justify-content-center justify-content-md-between align-items-center border-top border-light pt-3 mt-3 flex-column flex-md-row text-center text-white">
-  <p class="mb-1 mb-md-0">&copy; 2025 TravelBook. All rights reserved.</p>
-  <p class="mb-0">Developed by Kavya Infoweb Pvt Ltd</p>
-</div>
-
-
-    </div>
-  </footer>
-
-  <!-- Scroll to Top Button -->
-  <button id="scrollTopBtn" class="btn btn-danger rounded-circle position-fixed shadow"
-    style="bottom: 20px; right: 20px; display: none;">
-    <i class="fa fa-arrow-up"></i>
-  </button>
+  </section>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
- <script>
-  // Prevent numbers/symbols while typing
-  document.getElementById("name").addEventListener("input", function () {
-    this.value = this.value.replace(/[^A-Za-z\s]/g, "");
-  });
 
-  // Validation on submit
-  document.getElementById("contactForm").addEventListener("submit", function (event) {
-    event.preventDefault();
+  <script>
+    // Restrict name field to letters and spaces only
+    document.getElementById("name").addEventListener("input", function () {
+      this.value = this.value.replace(/[^A-Za-z\s]/g, "");
+    });
 
-    let isValid = true;
+    // Validate form on submit
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+      let isValid = true;
 
-    const nameError = document.getElementById("nameError");
-    const emailError = document.getElementById("emailError");
-    const messageError = document.getElementById("messageError");
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
 
-    nameError.textContent = "";
-    emailError.textContent = "";
-    messageError.textContent = "";
+      const nameError = document.getElementById("nameError");
+      const emailError = document.getElementById("emailError");
+      const messageError = document.getElementById("messageError");
 
-    const namePattern = /^[A-Za-z\s]+$/;
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      // Reset error messages
+      nameError.textContent = "";
+      emailError.textContent = "";
+      messageError.textContent = "";
 
-    if (name === "") {
-      nameError.textContent = "Please enter your name.";
-      isValid = false;
-    } else if (!namePattern.test(name)) {
-      nameError.textContent = "Name must contain only letters (A–Z).";
-      isValid = false;
-    }
+      // Regex patterns
+      const namePattern = /^[A-Za-z\s]+$/;
+      // 👇 Strict email pattern: username@domain.tld (2–4 letters in TLD)
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}$/;
 
-    if (email === "") {
-      emailError.textContent = "Please enter your email.";
-      isValid = false;
-    } else if (!emailPattern.test(email)) {
-      emailError.textContent = "Please enter a valid email address.";
-      isValid = false;
-    }
+      // Name validation
+      if (name === "") {
+        nameError.textContent = "Please enter your name.";
+        isValid = false;
+      } else if (!namePattern.test(name)) {
+        nameError.textContent = "Name must contain only letters (A–Z).";
+        isValid = false;
+      }
 
-    if (message === "") {
-      messageError.textContent = "Please enter your message.";
-      isValid = false;
-    }
+      // Email validation
+      if (email === "") {
+        emailError.textContent = "Please enter your email address.";
+        isValid = false;
+      } else if (!emailPattern.test(email)) {
+        emailError.textContent = "Please enter a valid Email-ID (e.g. bhagyashri@gmail.com).";
+        isValid = false;
+      }
 
-    if (isValid) {
-      window.location.href = "thankyou.html";
-    }
-  });
-</script>
+      // Message validation
+      if (message === "") {
+        messageError.textContent = "Please enter your message.";
+        isValid = false;
+      }
 
-<script>
-  // Check login status from localStorage
-  function updateLoginLogout() {
-    const loginLink = document.getElementById("loginLogoutLink");
-    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-
-    if (isLoggedIn) {
-      loginLink.textContent = "Logout";
-      loginLink.href = "#"; // Disable redirect for logout
-      loginLink.addEventListener("click", function (e) {
-        e.preventDefault();
-        localStorage.removeItem("isLoggedIn");
-        alert("You have been logged out!");
-        updateLoginLogout(); // Refresh navbar text
-        window.location.href = "index.html"; // Redirect after logout
-      });
-    } else {
-      loginLink.textContent = "Login";
-      loginLink.href = "login.html";
-    }
-  }
-
-  // Run on page load
-  document.addEventListener("DOMContentLoaded", updateLoginLogout);
-</script>
-
+      // Redirect if valid
+      if (isValid) {
+        window.location.href = "thankyou.html";
+      }
+    });
+  </script>
 </body>
-
 </html>

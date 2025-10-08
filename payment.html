@@ -13,7 +13,8 @@
 
   <style>
     body {
-      background: url('https://images.unsplash.com/photo-1582719478174-3f6a94f6f113?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover fixed;
+      background: url('https://images.unsplash.com/photo-1582719478174-3f6a94f6f113?auto=format&fit=crop&w=1470&q=80') 
+        no-repeat center center/cover fixed;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -70,7 +71,7 @@
     }
 
     .payment-card .btn-pay:hover {
-      background-color:  #0855c8;
+      background-color: #0855c8;
       color: black;
     }
   </style>
@@ -126,9 +127,10 @@
       const expiry = document.getElementById("expiry").value;
       const cvv = document.getElementById("cvv").value.trim();
 
-      // Name validation
-      if (name.length < 3) {
-        alert("Please enter a valid cardholder name.");
+      // ✅ Cardholder Name Validation (Only letters and spaces)
+      const namePattern = /^[A-Za-z\s]+$/;
+      if (!namePattern.test(name)) {
+        alert("Please enter a valid cardholder name (letters and spaces only).");
         return;
       }
 
