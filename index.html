@@ -296,35 +296,24 @@
 
   <!-- Newsletter -->
   <section class="text-center py-5 bg-primary text-white">
-    <div class="container">
-      <h2>Subscribe to Our Newsletter</h2>
-      <p>Get the latest travel deals and offers directly in your inbox.</p>
-      <form class="row justify-content-center newsletter">
-        <div class="col-md-6 col-sm-8 mb-2">
-          <input type="email" class="form-control" placeholder="Enter your email">
-        </div>
-        <div class="col-md-2 col-sm-4">
-          <button class="btn btn-warning w-100"><a href="contact.html" style="text-decoration: none;">Subscribe </a></button>
-        </div>
-      </form>
-    </div>
-  </section>
+  <div class="container">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get the latest travel deals and offers directly in your inbox.</p>
+
+    <form id="newsletterForm" class="row justify-content-center newsletter">
+      <div class="col-md-6 col-sm-8 mb-2">
+        <input type="email" id="newsletterEmail" class="form-control" placeholder="Enter your email" required>
+        <small id="emailError" class="text-warning fw-semibold"></small>
+      </div>
+      <div class="col-md-2 col-sm-4">
+        <button type="submit" class="btn btn-warning w-100">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
 
 
 
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer Example</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
-
-  <body>
    
 <!-- Footer Section -->
 <footer class="footer-modern text-white pt-5">
@@ -418,6 +407,34 @@
 
   // Run on page load
   document.addEventListener("DOMContentLoaded", updateLoginLogout);
+</script>
+
+<script>
+  document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById("newsletterEmail").value.trim();
+    const emailError = document.getElementById("emailError");
+
+    // Reset error message
+    emailError.textContent = "";
+
+    // Strict email pattern
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}(\.[A-Za-z]{2,4})?$/;
+
+    // Validate email
+    if (email === "") {
+      emailError.textContent = "Please enter your email address.";
+      return;
+    } else if (!emailPattern.test(email)) {
+      emailError.textContent = "Please enter a valid Email-ID (e.g. bhagyashri@gmail.com).";
+      return;
+    }
+
+    // If valid
+    alert("🎉 Thank you for subscribing!");
+    document.getElementById("newsletterForm").reset();
+  });
 </script>
 
   </body>
